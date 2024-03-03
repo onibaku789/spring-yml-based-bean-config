@@ -17,7 +17,7 @@ public class SpringBootConsoleApplication {
     public CommandLineRunner demo(StringManipulationService stringManipulationService) {
         return (args) -> {
             // Example usage of the StringManipulationService
-            String inputString = "Hello, World";
+            String inputString = "Hello, World-";
             System.out.println("Original: " + inputString);
             String processedString = stringManipulationService.processString(inputString);
             System.out.println("Processed: " + processedString);

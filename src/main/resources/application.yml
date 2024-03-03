@@ -1,13 +1,15 @@
 beans:
+  - beanName: splitterBean
+    className: org.example.SplitterBean
+    constructorArgs:
+      divider: "-"
+    dependsOn:
+      - uppercaseBean
   - beanName: uppercaseBean
     className: org.example.UppercaseBean
-    properties:
+    constructorArgs:
       suffix: " PROCESSED"
   - beanName: suffixBean
     className: org.example.SuffixBean
-    properties:
+    constructorArgs:
       suffix: " APPENDED"
-  - beanName: splitterBean
-    className: org.example.SplitterBean
-    properties:
-      divider: "-"
