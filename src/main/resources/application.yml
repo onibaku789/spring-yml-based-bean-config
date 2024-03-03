@@ -1,0 +1,13 @@
+beans:
+  - beanName: uppercaseBean
+    className: org.example.UppercaseBean
+    properties:
+      suffix: " PROCESSED"
+  - beanName: suffixBean
+    className: org.example.SuffixBean
+    properties:
+      suffix: " APPENDED"
+  - beanName: splitterBean
+    className: org.example.SplitterBean
+    properties:
+      divider: "-"
